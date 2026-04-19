@@ -248,7 +248,7 @@
     background: var(--card);
     color: var(--ink);
     border-radius: var(--radius-lg);
-    padding: 22px 20px;
+    padding: 30px 26px;
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--card-edge);
     position: relative;
@@ -256,7 +256,7 @@
   .notebook::before {
     content: "";
     position: absolute;
-    left: 18px; right: 18px;
+    left: 14px; right: 14px;
     top: 14px; bottom: 14px;
     border: 1px dashed rgba(122,103,72,0.35);
     border-radius: 12px;
@@ -265,10 +265,11 @@
 
   .field {
     position: relative;
-    padding: 12px 0;
+    padding: 20px 6px;
     border-bottom: 1px dashed rgba(122,103,72,0.3);
   }
-  .field:last-child { border-bottom: none; }
+  .field:first-child { padding-top: 10px; }
+  .field:last-child { border-bottom: none; padding-bottom: 10px; }
 
   .field-label {
     display: flex;
@@ -279,7 +280,7 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--ink-soft);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .stepper {
@@ -676,11 +677,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 0;
+    padding: 22px 6px;
     border-bottom: 1px dashed rgba(122,103,72,0.3);
-    gap: 16px;
+    gap: 18px;
   }
-  .settings-item:last-child { border-bottom: none; }
+  .settings-item:first-child { padding-top: 10px; }
+  .settings-item:last-child { border-bottom: none; padding-bottom: 10px; }
   .settings-item .label {
     font-family: 'Cinzel', serif;
     font-size: 13px;
